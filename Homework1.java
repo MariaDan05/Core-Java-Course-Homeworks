@@ -1,4 +1,4 @@
-public class Homework1 {
+public class HomeworkLesson1 {
     public static void main(String[] args) {
         byte b = 109;
         System.out.println("b = " + b);
