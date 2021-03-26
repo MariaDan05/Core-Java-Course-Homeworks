@@ -1,3 +1,5 @@
+//Task: Create primitive types and print their values
+
 public class HomeworkLesson1 {
     public static void main(String[] args) {
         byte b = 109;
