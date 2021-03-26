@@ -1,1 +1,1 @@
-# Here are my homeworks for the Core Java Course
+# Hi! Here are my homeworks for the Core Java Course
