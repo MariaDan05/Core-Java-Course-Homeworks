@@ -34,6 +34,16 @@ public class HomeworkLesson2 {
         int d = a++;// d = 10, a = 11
         System.out.println("d = " + d + ", a = " + a);
         System.out.println();
+        
+        int a1 = 34;
+        int b1 = 21;
+        int c1 = a1++ + ++b1;// c1 = 34 + 22 = 56, a1 = 35, b1 = 22
+        int d1 = --a1 + --b1 + c1--;// d1 = 34 + 21 + 56 = 111, a1 = 34, b1 = 21, c1 = 55
+        int e = a1 + ++b1 + ++c1 + d1--;// e = 34 + 22 + 56 + 111 = 223, a1 = 34, b1 = 22, c1 == 56, d1 == 110
+        int f = --a1 + b1-- + --c1 - d1++;// f = 33 + 22 + 55 - 110 = 0, a1 = 33, b1 = 21, c1 = 55, d1 = 111
+        int sum = a1 + b1 + c1 + d1 + e + f;// sum = 33 + 21 + 55 + 111 + 223 = 443
+        System.out.println("sum = " + sum);
+        System.out.println();
 
         System.out.println("The Relational Operators(>,>=,<,<=,==,!=) + If/else statement: ");
         if(a < b){
