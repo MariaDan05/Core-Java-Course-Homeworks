@@ -94,5 +94,9 @@ public class HomeworkLesson2 {
         value = 12;
         System.out.println("value = " + value);
         System.out.println("value >>> 2 = " + (value >>> 2));
+        
+        System.out.println("\nTask: Detect is the number is the power of 2 or not: ");
+        int x = 3;
+        System.out.println(((x & (x - 1)) == 0) ? "Yes" : "No");
     }
 }
