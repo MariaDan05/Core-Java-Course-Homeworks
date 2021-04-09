@@ -3,6 +3,8 @@ import model.House;
 import model.Market;
 import model.Student;
 
+//Task: Create Logical Structures (As big as possible) from your life and print them in main function.
+
 public class Test {
     public static void main(String[] args) {
         //Students
