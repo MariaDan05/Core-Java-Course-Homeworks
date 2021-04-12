@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-//Task: Examples of using constructors and methods of String class
 public class HomeworkLesson5 {
     public static void main(String[] args) {
+        System.out.println("Task: Examples of using constructors and methods of String class:");
         String s = new String();//the default constructor creates an empty String, will create an instance of String with no characters in it.
 
         char[] chars = {'h', 'o', 'm', 'e'};
