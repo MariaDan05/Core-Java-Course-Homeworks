@@ -17,4 +17,22 @@ public class StudentConvertor {
         }
         return students;
     }
+    
+    public static Student[] convertor1(String[] strings){
+        Student[] students = new Student[strings.length];
+        for(int i = 0; i < students.length; ++i) {
+
+            String[] parts = strings[i].split(",");
+
+            Student student = new Student();
+
+            student.setFirstName(parts[0]);
+            student.setLastName(parts[1]);
+            student.setYear(Integer.parseInt(parts[2]));
+            student.setGender(parts[3].charAt(0));
+            student.setMark(Double.parseDouble(parts[4]));
+            students[i] = student;
+        }
+        return students;
+    }
 }
