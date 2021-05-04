@@ -1,6 +1,6 @@
 package order;
-import supermarket.customer.Customer;
-import supermarket.food.FoodProducts;
+import customer.Customer;
+import food.FoodProducts;
 
 public class Order {
     private Customer customer;
