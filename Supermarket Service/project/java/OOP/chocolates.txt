@@ -1,4 +1,4 @@
-RitterSport,5.6,289,true
-AlpenGold,3.4,200,false
-Milka,2.0,134,false
-Toblerone,6.8,210,true
+0.RitterSport,5.6,289,true
+1.AlpenGold,3.4,200,false
+2.Milka,2.0,134,false
+3.Toblerone,6.8,210,true
