@@ -15,11 +15,11 @@ public class SupermarketTest {
         Scanner s = new Scanner(System.in);
         //FileService.createFolder("project\\java\\OOP");
         //FileService.createFile("project\\java\\OOP", "customers.txt");
-        //FileService.write("project\\java\\OOP\\customers.txt", "Hayk,Arabyan,hayk.arabyan@gmail.com,+37491811122");
-        //FileService.write("project\\java\\OOP\\customers.txt", "\nSevak,Nalbandyan,sevak.nalbandyan@gmail.com,+37491898122");
-        //FileService.write("project\\java\\OOP\\customers.txt", "\nAnna,Davtyan,anna.davtyan@gmail.com,+37434811452");
-        //FileService.write("project\\java\\OOP\\customers.txt", "\nNana,Hakobyan,nana.hakobyan@gmail.com,+37423845122");
-        //FileService.write("project\\java\\OOP\\customers.txt", "\nKim,C,kim.c@gmail.com,+37498819822");
+        //FileService.write("project\\java\\OOP\\customers.txt", "1.Hayk,Arabyan,hayk.arabyan@gmail.com,+37491811122");
+        //FileService.write("project\\java\\OOP\\customers.txt", "\n2.Sevak,Nalbandyan,sevak.nalbandyan@gmail.com,+37491898122");
+        //FileService.write("project\\java\\OOP\\customers.txt", "\n3.Anna,Davtyan,anna.davtyan@gmail.com,+37434811452");
+        //FileService.write("project\\java\\OOP\\customers.txt", "\n4.Nana,Hakobyan,nana.hakobyan@gmail.com,+37423845122");
+        //FileService.write("project\\java\\OOP\\customers.txt", "\n5.Kim,C,kim.c@gmail.com,+37498819822");
         //System.out.println();
         System.out.println("All customers: ");
         System.out.println(FileService.read("project\\\\java\\\\OOP\\\\customers.txt"));
@@ -30,49 +30,45 @@ public class SupermarketTest {
 
 
         //FileService.createFile("project\\java\\OOP", "chocolates.txt");
-        //FileService.write("project\\java\\OOP\\chocolates.txt", "RitterSport,5.6,289,true");
-        //FileService.write("project\\java\\OOP\\chocolates.txt", "\nAlpenGold,3.4,200,false");
-        //FileService.write("project\\java\\OOP\\chocolates.txt", "\nMilka,2.0,134,false");
-        //FileService.write("project\\java\\OOP\\chocolates.txt", "\nToblerone,6.8,210,true");
+        //FileService.write("project\\java\\OOP\\chocolates.txt", "1.RitterSport,5.6,289,true");
+        //FileService.write("project\\java\\OOP\\chocolates.txt", "\n2.AlpenGold,3.4,200,false");
+        //FileService.write("project\\java\\OOP\\chocolates.txt", "\n3.Milka,2.0,134,false");
+        //FileService.write("project\\java\\OOP\\chocolates.txt", "\n4.Toblerone,6.8,210,true");
 
         String[] strings1 = FileService.readLines("project\\\\java\\\\OOP\\chocolates.txt");
-
         Chocolate[] chocolates = ChocolateConvertor.chocolateConvertor(strings1);
 
 
         //FileService.createFile("project\\java\\OOP", "jellies.txt");
-        //FileService.write("project\\java\\OOP\\jellies.txt", "TuttiFrutti,1.2,50,yellow");
-        //FileService.write("project\\java\\OOP\\jellies.txt", "\nMamba,1.0,26,red");
-        //FileService.write("project\\java\\OOP\\jellies.txt", "\nMj,2.2,21,blue");
-        //FileService.write("project\\java\\OOP\\jellies.txt", "\nASA,7.0,12,purple");
+        //FileService.write("project\\java\\OOP\\jellies.txt", "1.TuttiFrutti,1.2,50,yellow");
+        //FileService.write("project\\java\\OOP\\jellies.txt", "\n2.Mamba,1.0,26,red");
+        //FileService.write("project\\java\\OOP\\jellies.txt", "\n3.Mj,2.2,21,blue");
+        //FileService.write("project\\java\\OOP\\jellies.txt", "\n4.ASA,7.0,12,purple");
 
         String[] strings2 = FileService.readLines("project\\\\java\\\\OOP\\jellies.txt");
-
         Jelly[] jellies = JellyConvertor.jellyConvertor(strings2);
 
 
         //FileService.createFile("project\\java\\OOP", "cakes.txt");
-        //FileService.write("project\\java\\OOP\\cakes.txt", "ChocolateCake,10.5,300,true");
-        //FileService.write("project\\java\\OOP\\cakes.txt", "\nCheeseCake,20.7,360,false");
-        //FileService.write("project\\java\\OOP\\cakes.txt", "\nStrawberryCake,22.2,400,false");
-        //FileService.write("project\\java\\OOP\\cakes.txt", "\nAppleChocolateCake,17.4,430,true");
+        //FileService.write("project\\java\\OOP\\cakes.txt", "1.ChocolateCake,10.5,300,true");
+        //FileService.write("project\\java\\OOP\\cakes.txt", "\n2.CheeseCake,20.7,360,false");
+        //FileService.write("project\\java\\OOP\\cakes.txt", "\n3.StrawberryCake,22.2,400,false");
+        //FileService.write("project\\java\\OOP\\cakes.txt", "\n4.AppleChocolateCake,17.4,430,true");
 
         String[] strings3 = FileService.readLines("project\\\\java\\\\OOP\\cakes.txt");
-
         Cake[] cakes = CakeConvertor.cakeConvertor(strings3);
 
 
         //FileService.createFile("project\\java\\OOP", "breads.txt");
-        //FileService.write("project\\java\\OOP\\breads.txt", "YerevanFactory,0.5,12,white");
-        //FileService.write("project\\java\\OOP\\breads.txt", "\nGyumriFactory,1.3,30,black");
-        //FileService.write("project\\java\\OOP\\breads.txt", "\nLoriFactory,0.7,20,lavash");
-        //FileService.write("project\\java\\OOP\\breads.txt", "\nAshtarakFactory,2.0,21,black");
+        //FileService.write("project\\java\\OOP\\breads.txt", "1.YerevanFactory,0.5,12,white");
+        //FileService.write("project\\java\\OOP\\breads.txt", "\n2.GyumriFactory,1.3,30,black");
+        //FileService.write("project\\java\\OOP\\breads.txt", "\n3.LoriFactory,0.7,20,lavash");
+        //FileService.write("project\\java\\OOP\\breads.txt", "\n4.AshtarakFactory,2.0,21,black");
 
         String[] strings4 = FileService.readLines("project\\\\java\\\\OOP\\breads.txt");
-
         Bread[] breads = BreadConvertor.breadConvertor(strings4);
 
-        
+
         //Creating order and notifying customer with email
         OrderService orderService = new OrderService();
 
@@ -81,7 +77,7 @@ public class SupermarketTest {
         System.out.println(order.toEmail());
         System.out.println();
 
-        
+        System.out.println("Information about customers:");
         boolean isMenuActive1 = true;
         while(isMenuActive1) {
             System.out.println("Enter command number:");
