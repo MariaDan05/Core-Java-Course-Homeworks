@@ -1,4 +1,4 @@
-YerevanFactory,0.5,12,white
-GyumriFactory,1.3,30,black
-LoriFactory,0.7,20,lavash
-AshtarakFactory,2.0,21,black
+0.YerevanFactory,0.5,12,white
+1.GyumriFactory,1.3,30,black
+2.LoriFactory,0.7,20,lavash
+3.AshtarakFactory,2.0,21,black
