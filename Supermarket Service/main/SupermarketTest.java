@@ -15,68 +15,130 @@ public class SupermarketTest {
         Scanner s = new Scanner(System.in);
         //FileService.createFolder("project\\java\\OOP");
         //FileService.createFile("project\\java\\OOP", "customers.txt");
-        //FileService.write("project\\java\\OOP\\customers.txt", "1.Hayk,Arabyan,hayk.arabyan@gmail.com,+37491811122");
-        //FileService.write("project\\java\\OOP\\customers.txt", "\n2.Sevak,Nalbandyan,sevak.nalbandyan@gmail.com,+37491898122");
-        //FileService.write("project\\java\\OOP\\customers.txt", "\n3.Anna,Davtyan,anna.davtyan@gmail.com,+37434811452");
-        //FileService.write("project\\java\\OOP\\customers.txt", "\n4.Nana,Hakobyan,nana.hakobyan@gmail.com,+37423845122");
-        //FileService.write("project\\java\\OOP\\customers.txt", "\n5.Kim,C,kim.c@gmail.com,+37498819822");
+        //FileService.write("project\\java\\OOP\\customers.txt", "0.Hayk,Arabyan,hayk.arabyan@gmail.com,+37491811122");
+        //FileService.write("project\\java\\OOP\\customers.txt", "\n1.Sevak,Nalbandyan,sevak.nalbandyan@gmail.com,+37491898122");
+        //FileService.write("project\\java\\OOP\\customers.txt", "\n2.Anna,Davtyan,anna.davtyan@gmail.com,+37434811452");
+        //FileService.write("project\\java\\OOP\\customers.txt", "\n3.Nana,Hakobyan,nana.hakobyan@gmail.com,+37423845122");
+        //FileService.write("project\\java\\OOP\\customers.txt", "\n4.Kim,C,kim.c@gmail.com,+37498819822");
         //System.out.println();
-        System.out.println("All customers: ");
-        System.out.println(FileService.read("project\\\\java\\\\OOP\\\\customers.txt"));
-        System.out.println();
 
         String[] strings = FileService.readLines("project\\java\\OOP\\customers.txt");
         Customer[] customers = CustomerConvertor.customerConvertor(strings);
 
 
         //FileService.createFile("project\\java\\OOP", "chocolates.txt");
-        //FileService.write("project\\java\\OOP\\chocolates.txt", "1.RitterSport,5.6,289,true");
-        //FileService.write("project\\java\\OOP\\chocolates.txt", "\n2.AlpenGold,3.4,200,false");
-        //FileService.write("project\\java\\OOP\\chocolates.txt", "\n3.Milka,2.0,134,false");
-        //FileService.write("project\\java\\OOP\\chocolates.txt", "\n4.Toblerone,6.8,210,true");
+        //FileService.write("project\\java\\OOP\\chocolates.txt", "0.RitterSport,5.6,289,true");
+        //FileService.write("project\\java\\OOP\\chocolates.txt", "\n1.AlpenGold,3.4,200,false");
+        //FileService.write("project\\java\\OOP\\chocolates.txt", "\n2.Milka,2.0,134,false");
+        //FileService.write("project\\java\\OOP\\chocolates.txt", "\n3.Toblerone,6.8,210,true");
 
         String[] strings1 = FileService.readLines("project\\\\java\\\\OOP\\chocolates.txt");
         Chocolate[] chocolates = ChocolateConvertor.chocolateConvertor(strings1);
 
 
         //FileService.createFile("project\\java\\OOP", "jellies.txt");
-        //FileService.write("project\\java\\OOP\\jellies.txt", "1.TuttiFrutti,1.2,50,yellow");
-        //FileService.write("project\\java\\OOP\\jellies.txt", "\n2.Mamba,1.0,26,red");
-        //FileService.write("project\\java\\OOP\\jellies.txt", "\n3.Mj,2.2,21,blue");
-        //FileService.write("project\\java\\OOP\\jellies.txt", "\n4.ASA,7.0,12,purple");
+        //FileService.write("project\\java\\OOP\\jellies.txt", "0.TuttiFrutti,1.2,50,yellow");
+        //FileService.write("project\\java\\OOP\\jellies.txt", "\n1.Mamba,1.0,26,red");
+        //FileService.write("project\\java\\OOP\\jellies.txt", "\n2.Mj,2.2,21,blue");
+        //FileService.write("project\\java\\OOP\\jellies.txt", "\n3.ASA,7.0,12,purple");
 
         String[] strings2 = FileService.readLines("project\\\\java\\\\OOP\\jellies.txt");
         Jelly[] jellies = JellyConvertor.jellyConvertor(strings2);
 
 
         //FileService.createFile("project\\java\\OOP", "cakes.txt");
-        //FileService.write("project\\java\\OOP\\cakes.txt", "1.ChocolateCake,10.5,300,true");
-        //FileService.write("project\\java\\OOP\\cakes.txt", "\n2.CheeseCake,20.7,360,false");
-        //FileService.write("project\\java\\OOP\\cakes.txt", "\n3.StrawberryCake,22.2,400,false");
-        //FileService.write("project\\java\\OOP\\cakes.txt", "\n4.AppleChocolateCake,17.4,430,true");
+        //FileService.write("project\\java\\OOP\\cakes.txt", "0.ChocolateCake,10.5,300,true");
+        //FileService.write("project\\java\\OOP\\cakes.txt", "\n1.CheeseCake,20.7,360,false");
+        //FileService.write("project\\java\\OOP\\cakes.txt", "\n2.StrawberryCake,22.2,400,false");
+        //FileService.write("project\\java\\OOP\\cakes.txt", "\n3.AppleChocolateCake,17.4,430,true");
 
         String[] strings3 = FileService.readLines("project\\\\java\\\\OOP\\cakes.txt");
         Cake[] cakes = CakeConvertor.cakeConvertor(strings3);
 
 
         //FileService.createFile("project\\java\\OOP", "breads.txt");
-        //FileService.write("project\\java\\OOP\\breads.txt", "1.YerevanFactory,0.5,12,white");
-        //FileService.write("project\\java\\OOP\\breads.txt", "\n2.GyumriFactory,1.3,30,black");
-        //FileService.write("project\\java\\OOP\\breads.txt", "\n3.LoriFactory,0.7,20,lavash");
-        //FileService.write("project\\java\\OOP\\breads.txt", "\n4.AshtarakFactory,2.0,21,black");
+        //FileService.write("project\\java\\OOP\\breads.txt", "0.YerevanFactory,0.5,12,white");
+        //FileService.write("project\\java\\OOP\\breads.txt", "\n1.GyumriFactory,1.3,30,black");
+        //FileService.write("project\\java\\OOP\\breads.txt", "\n2.LoriFactory,0.7,20,lavash");
+        //FileService.write("project\\java\\OOP\\breads.txt", "\n3.AshtarakFactory,2.0,21,black");
 
         String[] strings4 = FileService.readLines("project\\\\java\\\\OOP\\breads.txt");
         Bread[] breads = BreadConvertor.breadConvertor(strings4);
 
 
         //Creating order and notifying customer with email
-        OrderService orderService = new OrderService();
+        boolean bool = true;
+        outerloop:
+        while (bool) {
+            System.out.println("All customers: ");
+            System.out.println(FileService.read("project\\\\java\\\\OOP\\\\customers.txt"));
+            System.out.println();
 
-        Order order = orderService.createOrder();
+            System.out.println("Enter number of costumer 0-4:");
+            int num = s.nextInt();
+            Customer customer = customers[num];
 
-        System.out.println(order.toEmail());
+            System.out.println("Enter order number(100-10000):");
+            int orderNumber = s.nextInt();
+
+            System.out.println("Enter number of food products you want to order:");
+            int numberOfPurchasedProducts = s.nextInt();
+
+            FoodProducts[] foodProducts = new FoodProducts[numberOfPurchasedProducts];
+            for (int i = 0; i < foodProducts.length; i++) {
+
+                System.out.println("Choose the category you want to order from(Chocolate/Jelly/Cake/Bread)");
+                String ss = s.next();
+                switch (ss) {
+                    case "Chocolate": {
+                        System.out.println("All chocolates:");
+                        System.out.println(FileService.read("project\\\\java\\\\OOP\\\\chocolates.txt"));
+                        System.out.println("Enter the number of chocolate you want to order:");
+                        int n = s.nextInt();
+                        foodProducts[i] = chocolates[n];
+                        break;
+                    }
+                    case "Jelly": {
+                        System.out.println("All jellies:");
+                        System.out.println(FileService.read("project\\\\java\\\\OOP\\\\jellies.txt"));
+                        System.out.println("Enter the number of jelly you want to order:");
+                        int n = s.nextInt();
+                        foodProducts[i] = jellies[n];
+                        break;
+                    }
+                    case "Cake": {
+                        System.out.println("All cakes:");
+                        System.out.println(FileService.read("project\\\\java\\\\OOP\\\\cakes.txt"));
+                        System.out.println("Enter the number of cake you want to order:");
+                        int n = s.nextInt();
+                        foodProducts[i] = cakes[n];
+                        break;
+                    }
+                    case "Bread": {
+                        System.out.println("All breads:");
+                        System.out.println(FileService.read("project\\\\java\\\\OOP\\\\breads.txt"));
+                        System.out.println("Enter the number of bread you want to order:");
+                        int n = s.nextInt();
+                        foodProducts[i] = breads[n];
+                        break;
+                    }
+                    case "Exit": {
+                        bool  = false;
+                        break outerloop;
+                    }
+                    default:
+                        System.out.println("Invalid category");
+                        break;
+                }
+            }
+
+            Order order = new Order(customer,orderNumber,numberOfPurchasedProducts,foodProducts);
+            System.out.println(order.toEmail());
+            System.out.println();
+        }
+
+
         System.out.println();
-
         System.out.println("Information about customers:");
         boolean isMenuActive1 = true;
         while(isMenuActive1) {
@@ -105,10 +167,10 @@ public class SupermarketTest {
 
         boolean isMenuActive = true;
         while (isMenuActive) {
-            System.out.println("Choose the category of the product you want to order from:(Sweets/Bakery)");
+            System.out.println("Choose the category of the product you want to find out more info:(Sweets/Bakery)");
             String category = s.next();
             if (category.equals("Sweets")) {
-                System.out.println("Enter category of Sweets(Chocolate/Jelly)");
+                System.out.println("Enter category of Sweets you want to find out more info (Chocolate/Jelly)");
                 String category1 = s.next();
                 if (category1.equals("Chocolate")) {
                     ChocolateService chocolateService = new ChocolateService();
@@ -172,7 +234,7 @@ public class SupermarketTest {
                     System.out.println("Invalid category");
                 }
             } else if (category.equals("Bakery")) {
-                System.out.println("Enter category of Bakery(Cake/Bread)");
+                System.out.println("Enter category of Bakery you want to find out more info (Cake/Bread)");
                 String category1 = s.next();
                 if (category1.equals("Cake")) {
                     CakeService cakeService = new CakeService();
