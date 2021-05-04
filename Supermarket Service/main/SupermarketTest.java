@@ -1,7 +1,12 @@
-package supermarket.food;
-import supermarket.convertor.*;
-import supermarket.customer.Customer;
-import supermarket.service.*;
+package main;
+import convertor.*;
+import customer.Customer;
+import food.Bread;
+import food.Cake;
+import food.Chocolate;
+import food.Jelly;
+import order.Order;
+import services.*;
 
 import java.util.Scanner;
 
@@ -16,6 +21,10 @@ public class SupermarketTest {
         //FileService.write("project\\java\\OOP\\customers.txt", "\nNana,Hakobyan,nana.hakobyan@gmail.com,+37423845122");
         //FileService.write("project\\java\\OOP\\customers.txt", "\nKim,C,kim.c@gmail.com,+37498819822");
         //System.out.println();
+        System.out.println("All customers: ");
+        System.out.println(FileService.read("project\\\\java\\\\OOP\\\\customers.txt"));
+        System.out.println();
+
         String[] strings = FileService.readLines("project\\java\\OOP\\customers.txt");
         Customer[] customers = CustomerConvertor.customerConvertor(strings);
 
@@ -63,6 +72,16 @@ public class SupermarketTest {
 
         Bread[] breads = BreadConvertor.breadConvertor(strings4);
 
+        
+        //Creating order and notifying customer with email
+        OrderService orderService = new OrderService();
+
+        Order order = orderService.createOrder();
+
+        System.out.println(order.toEmail());
+        System.out.println();
+
+        
         boolean isMenuActive1 = true;
         while(isMenuActive1) {
             System.out.println("Enter command number:");
