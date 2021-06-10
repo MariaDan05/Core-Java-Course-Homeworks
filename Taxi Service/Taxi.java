@@ -3,12 +3,12 @@ package model;
 public class Taxi {
     private String model;
     private String country;
-    private int year;
-    private int mileage;
-    private int weight;
-    private int topSpeed;
-    private int seats;
-    private double cost;
+    private int year = 1999;
+    private int mileage = 250000;
+    private int weight = 2100;
+    private int topSpeed = 200;
+    private int seats = 2;
+    private double cost = 30000;
     private boolean sport;
 
     public Taxi(String model, String country, int year, int mileage) {
@@ -43,7 +43,7 @@ public class Taxi {
     }
 
     public void setModel(String model) {
-        if(model != null) {
+        if(!country.equals("")) {
             this.model = model;
         }
         else {
@@ -56,7 +56,7 @@ public class Taxi {
     }
 
     public void setCountry(String country) {
-        if(country != null) {
+        if(!country.equals("")) {
             this.country = country;
         }
         else {
